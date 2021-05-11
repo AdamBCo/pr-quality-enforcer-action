@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98cb171b-d9c0-495f-94ac-83de919c3f5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/enforce-quality.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/enforce-quality.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
@@ -43,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620758793148</updated>
-      <workItem from="1620758794337" duration="5385000" />
+      <workItem from="1620758794337" duration="5887000" />
     </task>
     <servers />
   </component>

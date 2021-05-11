@@ -21,17 +21,17 @@ async function run() {
 }
 
 function enforceMilestone(milestone) {
-  const enabled: boolean = core.getBooleanInput("CHECK_FOR_MILESTONE");
-  if (enabled && !milestone) {
-    core.setFailed('Please add a milestone to this PR');
-  }
+  // const enabled: boolean = core.getBooleanInput("CHECK_FOR_MILESTONE");
+  // if (enabled && !milestone) {
+  //   core.setFailed('Please add a milestone to this PR');
+  // }
 }
 
 function enforceProjects(hasProjects) {
-  const enabled: boolean = core.getBooleanInput("CHECK_FOR_PROJECTS");
-  if (enabled && !hasProjects) {
-    core.setFailed('Please add a milestone to this PR');
-  }
+  // const enabled: boolean = core.getBooleanInput("CHECK_FOR_PROJECTS");
+  // if (enabled && !hasProjects) {
+  //   core.setFailed('Please add a milestone to this PR');
+  // }
 }
 
 function enforcePlatformLabels(labels) {
