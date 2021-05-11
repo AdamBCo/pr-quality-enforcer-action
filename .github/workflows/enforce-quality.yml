@@ -1,0 +1,13 @@
+name: Enforce PR Quality
+
+on:
+  pull_request:
+    types: [labeled, unlabeled, opened, edited, synchronize]
+jobs:
+  enforce-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: adambco/pr-quality-enforcer-action@master
+        with:
+          REQUIRED_LABELS: "android,ios"
+          REQUIRED_LABELS_DESCRIPTION: "Select at least one label ['android','ios']"
