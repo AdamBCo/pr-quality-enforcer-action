@@ -13,6 +13,5 @@ jobs:
           REQUIRED_LABELS_DESCRIPTION: "Select at least one label ['android','ios']"
   enforce-milestone:
     runs-on: ubuntu-latest
-    needs: enforce-label
     steps:
       - run: echo "ADAM"
