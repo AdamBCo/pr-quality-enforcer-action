@@ -15,4 +15,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: enforce-label
     steps:
-      - run: echo ADAM
+      - run: echo "ADAM"
