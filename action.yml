@@ -1,0 +1,14 @@
+name: 'Enforce PR Quality'
+description: 'Enforce PR to meet quality standards'
+author: 'Adam Cooper'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  REQUIRED_MILESTONE_DESCRIPTION:
+    description: 'Request a milestone to be specified'
+  REQUIRED_LABELS:
+    description: 'Require at least one label'
+  REQUIRED_LABELS_DESCRIPTION:
+    description: 'Require at least one label description'
+

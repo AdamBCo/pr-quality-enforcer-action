@@ -1,0 +1,30 @@
+{
+  "name": "pr-quality-enforcer-action",
+  "version": "1.0.0",
+  "description": "Enforce quality for PRs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write src/*.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamBCo/pr-quality-enforcer-action.git"
+  },
+  "keywords": [],
+  "author": "Adam Cooper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamBCo/pr-quality-enforcer-action/issues"
+  },
+  "homepage": "https://github.com/AdamBCo/pr-quality-enforcer-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
+  }
+}
