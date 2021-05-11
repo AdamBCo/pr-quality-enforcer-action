@@ -1,23 +1,14 @@
-name: Threads Quality
+name: Threads
 on:
   pull_request:
     types: [labeled, unlabeled, opened, edited, synchronize]
 jobs:
-  Enforce_Flow_Labels:
+  Quality:
     runs-on: ubuntu-latest
     steps:
       - uses: adambco/pr-quality-enforcer-action@master
         with:
-          REQUIRED_LABELS: "bugfix,feature"
-          REQUIRED_LABELS_DESCRIPTION: "Select at least one label ['bugfix','feature']"
-  Enforce_Platform_Labels:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: adambco/pr-quality-enforcer-action@master
-        with:
-          REQUIRED_LABELS: "android,ios"
-          REQUIRED_LABELS_DESCRIPTION: "Select at least one label ['android','ios']"
-  Enforce_Milestones:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "ADAM"
+          CHECK_FOR_MILESTONE: true
+          CHECK_FOR_PROJECTS: true
+          TYPE_LABELS: "bugfix,feature"
+          PLATFORM_LABELS: "ios,android"
